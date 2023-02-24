@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(231, 231, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 1px 1px rgb(253, 252, 252);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+  padding: 12px;
+  border-bottom: 1px solid rgb(253, 252, 252);
+}
+
+.activity {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid rgb(253, 252, 252);
+  padding: 12px;
+}
+
+.activity1 {
+  display: flex;
+  gap: 12px;
+}
+
+.input {
+  width: 40vw;
+  height: 40px;
+  border: none;
+}
+
+.clear {
+  width: 41.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: none;
+  background-color: rgb(231, 231, 235);
+  font-size: 20px;
+  margin-bottom: 0;
+  box-shadow: 1px 1px 1px 1px rgb(253, 252, 252);
+}
