@@ -12,7 +12,7 @@ function showTodo() {
   list.forEach((element) => {
     if (element.completed === true) {
       liItem += `<li class="task">
-                                    <input type="checkbox" class="checkme" checked onclick="CheckMe(${element.index});" id="check${element.index}">
+                                    <input type="checkbox" class="checkme" checked onchange ="CheckMe(${element.index});" id="check${element.index}">
                     
                                     <input type="text" value="${element.description}" class="tasks" id="item${element.index}" readonly>                                    <i class="fa-solid uil-ellipsis-v edit " id="edit${element.index}" onclick="editItem(${element.index});"></i>
                                     <i class="fa-solid fa-trash delete" id="delete${element.index}" onclick="removeItem(${element.index});"></i>
