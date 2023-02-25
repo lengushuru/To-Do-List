@@ -1,60 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(231, 231, 235);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 90px;
+  width: 100vw;
+  height: 100vh;
+  background: #f7f4f4;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-main {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  box-shadow: 1px 1px 1px 1px rgb(253, 252, 252);
+.container {
+  width: 40vw;
+  padding: 50px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.list-header {
+.top-list {
   display: flex;
+  border: red;
   justify-content: space-between;
-  align-items: center;
-  width: 40vw;
-  padding: 12px;
-  border-bottom: 1px solid rgb(253, 252, 252);
+  border-bottom: 1px solid #ccc;
 }
 
-.activity {
-  width: 40vw;
+.top-list h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 2% 5%;
+}
+
+.recycle {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin: 2% 5%;
+  cursor: pointer;
+}
+
+.task-input {
   display: flex;
+  height: 52px;
   justify-content: space-between;
-  gap: 10px;
-  border: 1px solid rgb(253, 252, 252);
-  padding: 12px;
+  margin-top: 2%;
+  border-bottom: 1px solid #e9e6e6;
 }
 
-.activity1 {
-  display: flex;
-  gap: 12px;
+.enter {
+  margin-top: 3%;
+  cursor: pointer;
 }
 
-.input {
-  width: 40vw;
-  height: 40px;
+.no-item {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 5%;
+  color: rgba(250, 2, 51, 0.815);
+}
+
+.task-input input {
+  padding: 0 5%;
+  width: 90%;
+  outline: none;
+  font-size: 1rem;
+  font-style: italic;
   border: none;
 }
 
-.clear {
-  width: 41.5vw;
+.task {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
+  justify-content: space-between;
+}
+
+.task-box .task {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 17px;
+  border-bottom: 1px solid #ccc;
+}
+
+.checkme {
+  margin-right: 2%;
+}
+
+.tasks {
+  width: 75%;
   border: none;
-  background-color: rgb(231, 231, 235);
-  font-size: 20px;
-  margin-bottom: 0;
-  box-shadow: 1px 1px 1px 1px rgb(253, 252, 252);
+  outline: none;
+}
+
+.clearall {
+  background: none;
+  text-align: center;
+  width: 100%;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.delete {
+  display: none;
+}
+
+i {
+  font-size: 0.99rem;
+  color: rgb(156, 153, 153);
+  cursor: pointer;
 }
